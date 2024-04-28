@@ -14,9 +14,9 @@ config();
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: "postgres",
-    url: process.env.DB_URL,
+    url: "postgres://cmhignih:IW5E8LuKWvyTNAK59CMMPyaoPf_6Ev2h@isabelle.db.elephantsql.com/cmhignih",
     entities: [Product, Category],
-    database: process.env.DB_DB,
+    database: "cmhignih",
     synchronize: true
   }),
   ProductModule,
